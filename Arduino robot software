@@ -1,6 +1,6 @@
 int powerpin=12;
-#include <Servo.h>        // Include Servo Library
-#include <NewPing.h>      // Include Newping Library
+#include <Servo.h>        // Include Servo Library for robot's neck turning
+#include <NewPing.h>      // Include Newping Library for ultrasonic sensor
 
 
 const int LeftMotorForward = 4;
@@ -26,7 +26,7 @@ void setup()
   pinMode(LeftMotorBackward, OUTPUT);
   pinMode(RightMotorBackward, OUTPUT);
   
-  servo_motor.attach(10);   
+  servo_motor.attach(10);   // pin 10 is output for motor direction
   servo_motor.write(115);   // Base position for servo
   delay(2000);              
   distance = readPing();    // Check current distance
@@ -39,7 +39,7 @@ void setup()
   delay(100);
 }
 
-void loop()
+void loop() // default drive and ping 
 {  
   int distanceRight = 0;
   int distanceLeft = 0;
