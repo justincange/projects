@@ -43,5 +43,6 @@
     "serve-build": "^0.1.0",
     "styled-components": "^5.3.6",
     "ufw": "^1.0.3"
-  }
+  },
+  "version": "0.2.0"
 }

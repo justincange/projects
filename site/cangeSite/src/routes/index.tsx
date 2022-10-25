@@ -1,6 +1,5 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { Link } from '@builder.io/qwik-city';
 export default component$(() => {
 const styledDiv = {
   justifyContent: 'space-between',
@@ -8,47 +7,68 @@ const styledDiv = {
   margin: '0 auto',
   padding: '10px 0'
 }
-
   return (
-    <div>
+    <> 
       <div style={styledDiv}> 
+      <div> 
       <h1>
-        Justin Cange 
+        Justin Cange - SITE UNDER CONSTRUCTION
       </h1>
+      <ul>
+      <li>
+          I'm a college junior passionate about <br/> modern application development and tech infrastructure.
+        </li>
+        <li>
+          I study Computer Engineering and Economics at <br/> Columbia University, in the class of 2024.<br/>
+          I'm also the project lead for our school's<br/> Autonomous Vehicles Project! <br/>
+        </li>
+        </ul>
+      </div>
       <img style={{
          borderRadius: "60%",
          maxWidth: "30%",
-         height: 'auto'
+         height: '200px'
       }}
       src={'./pic.jpeg'}/>
       </div>
-      <div style={{marginTop:'-25%'}}> 
-      <ul>
-      <li>
-          I'm an software engineer highly interested in  <br/> app development and modern tech infrastructure.
-        </li>
+        <div style={styledDiv}> 
+        <ul> 
         <li>
-          I study Computer Engineering and Economics at <br/> Columbia University, in the class of 2024.
-        </li>
-        
-        <li>
-          Former intern at Compass, working full-stack within the <br/> Tech Infrastructure division.
-        </li>
+      In Summer '22, I was a SWE intern at Compass,  <br/> working full-stack within the  <br/> Tech Infrastructure division <br/> to help optimize the company-wide CI/CD pipeline.
+     </li>
+     </ul>
+     <img style={{
+         borderRadius: "10%",
+         maxWidth: "30%",
+         position: 'relative',
+         right: '3%',
+         height: '100px'
+      }}
+      src={'./compass.png'}/> 
+      </div>
+
+      <div style={styledDiv}> <div>  <ul> 
         <li>
           Next summer, I'll be working at Flatiron Health in NYC!
         </li>
         <li>
           To see some examples of what I work on in my spare time, view my Github at <a style={{textDecoration:'none'}} href="https://github.com/justincange"> this link.</a>
         </li>
-      </ul>
-      <Link class="mindblow" href="/flower">
-        Cool feature!
-      </Link>
-    </div>
-    </div>
+        </ul>
+        </div>
+     
+      <img style={{
+       borderRadius: "10%",
+       maxWidth: "30%",
+       position: 'relative',
+       height: '80px'
+      }}
+      src={'./flatiron.png'}/>
+      </div>
+    </>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
+  title: 'Justin Cange',
 };
