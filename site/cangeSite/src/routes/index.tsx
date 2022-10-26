@@ -4,8 +4,8 @@ export default component$(() => {
 const styledDiv = {
   justifyContent: 'space-between',
   display: 'flex', 
-  margin: '0 auto',
-  padding: '10px 0'
+  margin: '0',
+  padding: '0'
 }
   return (
     <> 
@@ -16,11 +16,12 @@ const styledDiv = {
       </h1>
       <ul>
       <li>
-          I'm a college junior passionate about <br/> modern application development and tech infrastructure.
+          I'm a college junior passionate about modern application development<br/> and tech infrastructure.
         </li>
         <li>
-          I study Computer Engineering and Economics at <br/> Columbia University, in the class of 2024.<br/>
-          I'm also the project lead for our school's<br/> Autonomous Vehicles Project! <br/>
+          I study <b>Computer Engineering at Columbia University</b>, in the class of 2024.<br/>
+          I'm also the project lead for our school's Autonomous Vehicles Project! <br/>
+          <br/>Additionally, I'm a volunteer tutor for Columbia One-To-One tutoring, and <br/> a member of the Rock Climbing Club.
         </li>
         </ul>
       </div>
@@ -34,7 +35,7 @@ const styledDiv = {
         <div style={styledDiv}> 
         <ul> 
         <li>
-      In Summer '22, I was a SWE intern at Compass,  <br/> working full-stack within the  <br/> Tech Infrastructure division <br/> to help optimize the company-wide CI/CD pipeline.
+      In Summer '22, I was a SWE intern at <b> Compass</b>, working full-stack within the <br/>Tech Infrastructure division to help optimize the CI/CD pipeline.
      </li>
      </ul>
      <img style={{
@@ -42,6 +43,7 @@ const styledDiv = {
          maxWidth: "30%",
          position: 'relative',
          right: '3%',
+         marginBottom: '2%',
          height: '100px'
       }}
       src={'./compass.png'}/> 
