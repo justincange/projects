@@ -1,0 +1,15 @@
+CXX = g++
+CXXFLAGS = -Wall -std=c++11
+EXECUTABLE = jcstore
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): jcstore.cpp
+	$(CXX) $(CXXFLAGS) jcstore.cpp -o $(EXECUTABLE)
+
+run: $(EXECUTABLE)
+	./$(EXECUTABLE)
+
+clean:
+	rm -f $(EXECUTABLE)
+
