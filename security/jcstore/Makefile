@@ -1,7 +1,7 @@
 XX = g++
 CC = gcc
-CXXFLAGS = -Wall -std=c++11
-CFLAGS = -Wall
+CXXFLAGS = -g -Wall -std=c++11
+CFLAGS = -g -Wall
 EXECUTABLE = jcstore
 CPPFLAGS = -I./crypto-algorithms
 
