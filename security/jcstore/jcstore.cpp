@@ -18,7 +18,7 @@ void printKeySchedule(const WORD keySchedule[], int nWords) {
     std::cout << std::endl;
 }
 int main(int argc, char* argv[]) {
-    const BYTE key;
+    BYTE key[16];
     FILE * keyFile = fopen("key.txt", "r");
     if (keyFile == NULL) {
         printf("Error opening key file\n");
